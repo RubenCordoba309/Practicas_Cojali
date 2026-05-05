@@ -6,32 +6,78 @@
     <title>Portfolio Profesional</title>
 </head>
 <body>
+    <header>
     <h1>
         Rubén Córdoba López de Pablo
     </h1>
     <p>Amante de la tecnología | Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
-    <div>
-        <h2>Sobre mí</h2>
-        <p>Soy Rubén Córdoba y me encanta el mundo de la informática y la programación desde pequeño.</p>
-        <p>Actualmente estoy estudiando Desarrollo de Aplicaciones Multiplataforma</p>
-        <p>Me considero una persona con ganas de aprender y trabajadora</p>
-    </div>
-    <div>
-        <h2>Habilidades Laborales</h2>
-        <ul>
-            <li>Desarrollo Web (HTML,CSS)</li>
-            <li>Gestion de versiones Git y GitHub</li>
-            <li>Trabajo en equipo</li>
-            <li>Desarrollo de aplicaciones Java</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Mis Enlaces y Contacto</h2>
-        <p>Puedes ver mis trabajos y contactarme a través del siguiente enlace</p>
-        <ul>
-            <li><a href="https://github.com/RubenCordoba309">Mi Perfil de GitHub</a></li>
-        </ul>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy Rubén Córdoba y me encanta el mundo de la informática y la programación desde pequeño.</p>
+            <p>Actualmente estoy estudiando Desarrollo de Aplicaciones Multiplataforma</p>
+            <p>Me considero una persona con ganas de aprender y trabajadora</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades Laborales</h2>
+            <ul>
+                <li>Desarrollo Web (HTML,CSS)</li>
+                <li>Gestion de versiones Git y GitHub</li>
+                <li>Trabajo en equipo</li>
+                <li>Desarrollo de aplicaciones Java</li>
+            </ul>
+        </section>
+        <section id="formulario">
+            <form action"#">
+                <h3>DATOS DE REGISTRO</h3>
+
+                <fieldset>
+                    <legend>Identificación personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" id="apellido1" name="apellido1" required>
+
+                    <label for="apellido2">Segundo apellido:</label>
+                    <input type="text" id="apellido2" name="apellido2" placeholder="opcional">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de contacto </legend>
+                    <label for="tlf">Teléfono:</label>
+                    <input type="tel" id="tlf" name="tlf" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Género:</legend> <input type="radio" id="genero_hombre" name="genero" value="hombre">
+                    <label for="genero_hombre">Hombre</label>
+
+                    <input type="radio" id="genero_mujer" name="genero" value="mujer">
+                    <label for="genero_mujer">Mujer</label>
+
+                    <input type="radio" id="genero_otro" name="genero" value="otro">
+                    <label for="genero_otro">Otro</label>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">ENVIAR</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id = "enlaces">
+            <h2>Mis Enlaces y Contacto</h2>
+            <p>Puedes ver mis trabajos y contactarme a través del siguiente enlace</p>
+            <ul>
+                <li><a href="https://github.com/RubenCordoba309">Mi Perfil de GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
         <p>2026 - Creado para las prácticas de Cojali</p>
-    </div>
+    </footer>
 </body>
 </html>
