@@ -159,13 +159,6 @@ footer {
     text-align: center;
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    width: 90%;
-    margin-bottom: 30px;
-}
-
 footer p {
     color: #66a5a2;
     font-size: 0.9rem;
