@@ -16,6 +16,20 @@ header {
     border-radius: 8px 8px 0 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1a252f;
+    padding: 15px;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .profile-img{
     width:  150px;
     height: 150px;
@@ -23,6 +37,12 @@ header {
     border-radius: 50%;
     border: 4px solid #3498db;
     margin-bottom: 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 header h1{ 
@@ -45,11 +65,27 @@ footer {
 
 section{
     background: white;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #3498db;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.proyecto-item {
+    flex: 1 1 250px;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #3498db;
+    text-align: center;
 }
 
 h2 {
@@ -67,6 +103,34 @@ form {
     margin-bottom: 15px;
 }
 
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.genero-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-enviar {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2ecc71;
+}
+
 label {
     display: block;
     font-weight: bold;
@@ -81,21 +145,6 @@ input, textarea {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #3498db;
-    color:white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
 a {
     color: #3498db;
     text-decoration: none;
@@ -103,4 +152,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: #66a5a2;
+    font-size: 0.9rem;
+    margin: 0;
 }
