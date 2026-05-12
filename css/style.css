@@ -1,19 +1,52 @@
+:root {
+    --bg-body: #bbfff9;
+    --bg-section: white;
+    --text-main: #333;
+    --text-header: white;
+    --header-color: #2c3e50;
+    --accent: #3498db;
+    --border: #ddd;
+}
+
+body.dark-mode {
+    --bg-body: #121212;
+    --bg-section: #1e1e1e;
+    --text-main: #f0f0f0;
+    --header-color: #000000;
+    --border: #444;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-main);
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #bbfff9;
+    background-color: var(--bg-body);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
+    position: relative;
     text-align: center;
     padding: 40px 0;
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--header-color);
+    color: var(--text-header);
     border-radius: 8px 8px 0 0;
+}
+
+.theme-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .navbar {
@@ -35,7 +68,7 @@ header {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #3498db;
+    border: 4px solid var(--accent);
     margin-bottom: 15px;
 }
 
@@ -64,19 +97,18 @@ footer {
 }
 
 section{
-    background: white;
+    background: var(--bg-section);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #3498db;
+    border-left: 5px solid var(--accent);
 }
 
 .proyectos-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
-    justify-content: center;
 }
 
 .proyecto-item {
@@ -84,7 +116,7 @@ section{
     background: #ecf0f1;
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #3498db;
+    border-left: 5px solid var(--accent);
     text-align: center;
 }
 
@@ -140,9 +172,11 @@ label {
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 4px;
     box-sizing: border-box;
+    background: var(--bg-section);
+    color: var(--text-main);
 }
 
 a {
@@ -163,4 +197,6 @@ footer p {
     color: #66a5a2;
     font-size: 0.9rem;
     margin: 0;
+    text-align: center;
+    padding: 20px;
 }
