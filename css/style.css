@@ -168,10 +168,24 @@ fieldset {
     gap: 10px;
 }
 
-.genero-group {
+.contenedor-genero {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
     align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contenedor-genero label {
+    display: inline;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.contenedor-genero input[type="radio"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
 }
 
 .btn-enviar {
