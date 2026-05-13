@@ -127,6 +127,24 @@ section{
     text-align: center;
 }
 
+.estudio-card {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.estudio-card:hover {
+    transform: translateY(-5px);
+}
+
+.estudio-card h4 {
+    margin: 0 0 10px 0;
+    color: var(--accent);
+}
+
 h2 {
     color: var(--text-h2);
     border-bottom: 2px solid var(--border);
