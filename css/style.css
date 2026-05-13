@@ -1,19 +1,25 @@
 :root {
     --bg-body: #bbfff9;
     --bg-section: white;
+    --bg-card: #ecf0f1;
     --text-main: #333;
     --text-header: white;
+    --text-h2: #2c3e50;
     --header-color: #2c3e50;
     --accent: #3498db;
     --border: #ddd;
+    --footer-text: #66a5a2;
 }
 
 body.dark-mode {
     --bg-body: #121212;
     --bg-section: #1e1e1e;
+    --bg-card:#2d2d2d;
     --text-main: #f0f0f0;
     --header-color: #000000;
+    --text-h2: #3498db;
     --border: #444;
+    --footer-text: #888;
 }
 
 body {
@@ -113,7 +119,8 @@ section{
 
 .proyecto-item {
     flex: 1 1 250px;
-    background: #ecf0f1;
+    background-color: var(--bg-card);
+    color: var(--text-main);
     padding: 15px;
     border-radius: 5px;
     border-left: 5px solid var(--accent);
@@ -121,8 +128,8 @@ section{
 }
 
 h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #eee;
+    color: var(--text-h2);
+    border-bottom: 2px solid var(--border);
     padding-bottom: 10px;
 }
 
@@ -194,7 +201,7 @@ footer {
 }
 
 footer p {
-    color: #66a5a2;
+    color: var(--footer-text);
     font-size: 0.9rem;
     margin: 0;
     text-align: center;
