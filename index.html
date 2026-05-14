@@ -45,6 +45,28 @@
                 <!--Contenido generado por JavaScript-->
             </div>
         </section>
+        <section id="agregar-estudios">
+            <h2>Añadir Nueva Formación</h2>
+            <form id="form-estudios">
+                <fieldset>
+                    <legend>Detalles académicos</legend>
+                    <label for="estudio-titulo">Nombre del estudio:</label>
+                    <input type="text" id="estudio-titulo" placeholder="Ej. Curso de JavaScript" required>
+
+                    <label for="estudio-centro">Localización o centro:</label>
+                    <input type="text" id="estudio-centro" placeholder="Ej. IES Juan Bosco, Alcazar de San Juan" required>
+                    
+                    <label for="estudio-tags">Tecnologías (separar por comas)</label>
+                    <input type="text" id="estudio-tags" placeholder="Ej. Java">
+                    <div id="vista-previa-tags" class="tags-contenedor"></div>
+                    
+                    <label for="estudio-imagen">URL de la imagen</label>
+                    <input type="url" id="estudio-imagen" placeholder="Ej. https://enlacedelaimagen/imagen.png">
+                </fieldset>
+
+                <button type="submit" class="btn-enviar">AÑADIR ESTUDIO</button>
+            </form>
+        </section>
         <section id="proyectos">
             <h2>Mis Proyectos Futuros</h2>
             <div class="proyectos-grid">
