@@ -272,6 +272,120 @@ a:hover {
     text-decoration: underline;
 }
 
+.buscador-contenedor{
+    margin-bottom: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+#github-btn {
+    width: auto;
+    padding: 0 20px;
+}
+
+.github-perfil-tarj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--bg-section);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #27ae60;
+}
+
+.github-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+}
+
+.github-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.github-info h3 {
+    margin: 0;
+    color: var(--text-h2);
+}
+
+.github-usuario {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.github-bio {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--footer-text);
+}
+
+.placeholder-busqueda,
+.cargando-repos,
+.sin-repos {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: var(--footer-text);
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.error-github {
+    color: #e74c3c;
+    grid-column: 1/ -1;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.github-repo-tarj {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.github-repo-tarj:hover {
+    transform: translateY(-5px);
+}
+
+.github-repo-tarj h4 {
+    margin: 0 0 10px 0;
+    color: var(--accent);
+}
+
+.repo-desc {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.github-tags-center {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.repo-linh-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.repo-btn {
+    text-decoration: none;
+    filter: brightness(1.1);
+}
+
 footer {
     padding: 40px 20px;
     text-align: center;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mediaqueries/mediaqueries.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
             <a href="#formulario">Registro</a>
         </nav>
 
-        <img src="" alt="Foto de perfil de Rubén Córdoba" class="profile-img">
+        <img src="imagenes/imagen-portfolio.jpeg" alt="Foto de perfil de Rubén Córdoba" class="profile-img">
     <h1>
         Rubén Córdoba López de Pablo
     </h1>
@@ -79,6 +80,17 @@
                     <p>Pequeño proyecto para crear una app para citas medicas a aquellos alumnos de la UCLM</p>
                 </article>
             </div>
+            <h2>Buscador de Perfiles de GitHub</h2>
+            <div class="buscador-contenedor">
+                <input type="text" id="github-buscador" placeholder="Introduce cualquier usuario de GitHub">
+                <button id="github-btn" class="btn-enviar">Buscar</button>
+            </div>
+            <div id="github-usu-tarj"></div>
+            <div id="repos-github" class="proyectos-grid">
+                <p class="placeholder-busqueda">
+                    Introduce un nombre de usuario para ver sus repositorios reales
+                </p>
+            </div>
         </section>
         <section id="formulario">
             <form action"#">
@@ -131,7 +143,7 @@
         </section>
     </main>
     <footer>
-        <p>@Copyright 2026 - Creado para las prácticas de Cojali</p>
+        <p>&copy; 2026 - Creado para las prácticas de Cojali</p>
     </footer>
 
     <script src="js/funcion.js"></script>

@@ -1,0 +1,35 @@
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+    main {
+        padding: 0 10px;
+    }
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .buscador-contenedor {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #github-btn {
+        width: 100%;
+        padding: 12px;
+    }
+    .github-perfil-tarj {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .github-avatar {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
